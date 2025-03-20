@@ -23,8 +23,9 @@ def tap(x, y):
     if not inside(ball):
         ball.x = -199
         ball.y = -199
-        speed.x = (x + 200) / 25
-        speed.y = (y + 200) / 25
+	#Controla la velocidad del proyectil, la aumentamos
+        speed.x = (x + 200) / 15
+        speed.y = (y + 200) / 15
 
 
 def inside(xy):
@@ -54,8 +55,9 @@ def move():
         target = vector(200, y)
         targets.append(target)
 
+    #Controla la velocidad de los balones, la aumentamos ligeramente
     for target in targets:
-        target.x -= 0.5
+        target.x -= 0.75
 
     if inside(ball):
         speed.y -= 0.35
