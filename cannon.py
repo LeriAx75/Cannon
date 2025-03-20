@@ -62,19 +62,21 @@ def move():
     if inside(ball):
         speed.y -= 0.35
         ball.move(speed)
+    else:
+        ball.x = -199
+        ball.y = -199
+        speed.x = 0
+        speed.y = 0
 
     dupe = targets.copy()
     targets.clear()
 
-    for target in dupe:
+    for target in dupe:       
         if abs(target - ball) > 13:
             targets.append(target)
 
-    draw()
 
-    for target in targets:
-        if not inside(target):
-            return
+    draw()
 
     ontimer(move, 50)
 
