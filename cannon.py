@@ -23,7 +23,8 @@ def tap(x, y):
     if not inside(ball):
         ball.x = -199
         ball.y = -199
-	#Controla la velocidad del proyectil, la aumentamos
+
+	#Estos son los valores que controlan la velocidad del proyectil. Entre mas pequeño el numero por el que dividimos mas rapido sera
         speed.x = (x + 200) / 15
         speed.y = (y + 200) / 15
 
@@ -55,8 +56,8 @@ def move():
         target = vector(200, y)
         targets.append(target)
 
-    #Controla la velocidad de los balones, la aumentamos ligeramente
     for target in targets:
+    #Este valor controla la velocidad de los balones. Entre mas grande sea el valor mayor sera la velocidad de los balones
         target.x -= 0.75
 
     if inside(ball):

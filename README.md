@@ -1,5 +1,8 @@
 # Cannon
 
-Este es el commit inicial con el código de archivo PY
+Historial de cambios realizados:
 
-Se aumento la valocidades de los proyectiles y de los balonres.
+Se carga el código original y se hace un push al repositorio
+
+Aumentamos la velocidad de los proyectiles y de los balones.
+
