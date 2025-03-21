@@ -63,6 +63,7 @@ def move():
         speed.y -= 0.35
         ball.move(speed)
     else:
+        """Reposiciona las pelotas en caso de que salgan de la pantalla"""
         ball.x = -199
         ball.y = -199
         speed.x = 0
